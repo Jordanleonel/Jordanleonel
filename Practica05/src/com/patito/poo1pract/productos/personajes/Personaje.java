@@ -1,3 +1,5 @@
+package com.patito.poo1pract.productos.personajes;
+import com.patito.poo1pract.productos.personajes;
 public class Personaje {
     private String nombre;
     private int edad;
