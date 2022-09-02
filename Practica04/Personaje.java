@@ -1,13 +1,9 @@
-    public class Personaje {
+public class Personaje {
     private String nombre;
     private int edad;
     public void SetNombre(String nombre){
         this.nombre = nombre;
-    }
-    //constructor de la clase 
-    public Personaje(String nombre){
-        edad = 0;
-    }
+    } 
     public String getNombre(){
         return nombre;   
     }
@@ -16,16 +12,23 @@
         System.out.println("Hola Alumno de POO "+ nombre);
         
     }
-    public int setEdad(int ed) {
-        return this.ed = ed;
+    //constructor 
+    public  Personaje(String nombre){
+        this.edad = 0;
+        this.nombre =nombre;
     }
-    // condicional de edad 
-    public boolean setEdad(Edad){
-        if(edad>0 & edad<120){
+    //primer metodo
+    public int getEdad(){
+        return this.edad;
+    }
+    //segundo metodo
+    public boolean setEdad(int edad){
+        if(edad>0 && edad<120){
+            this.edad = edad;
             return true;
         }else{
             return false;
         }
-        
+
     }
 }
