@@ -1,9 +1,9 @@
-public class Personaje {
+    public class Personaje {
     private String nombre;
     private int edad;
     public void SetNombre(String nombre){
         this.nombre = nombre;
-    } 
+    }
     public String getNombre(){
         return nombre;   
     }
