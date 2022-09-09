@@ -1,4 +1,4 @@
-package com.patito.poo1pract.personajes;
+package edu.escuela.gamepz.personajes;
 public class Personaje {
     private String nombre;
     private int edad;
@@ -9,17 +9,12 @@ public class Personaje {
     }
     public void SetNombre(String nombre){
         this.nombre = nombre;
-        int lenght = nombre.length();
-        if (nombre.length()>5 && nombre.length()<25)
-            return ;
+        if (nombre.length()>5 && nombre.length()<25){
+            return true;
+        }
     } 
     public String getNombre(){
         return nombre;   
-    }
-    
-    public void saludar(){
-        System.out.println("Hola Alumno de POO "+ nombre);
-        
     }
     //primer metodo
     public int getEdad(){
@@ -34,5 +29,10 @@ public class Personaje {
             return false;
         }
 
+    }
+    //nuevo metodo 
+    public void getDetalle(){
+        return nombre + "\t" edad;
+        
     }
 }
