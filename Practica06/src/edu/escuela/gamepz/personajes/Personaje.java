@@ -3,7 +3,13 @@ public class Personaje {
     private String nombre;
     private int edad;
     public void SetNombre(String nombre){
-        this.nombre = nombre;
+            for i in range(this.nombre){
+                    this.nombre = nombre;
+                     
+                    }
+
+        }
+        
     } 
     public String getNombre(){
         return nombre;   
