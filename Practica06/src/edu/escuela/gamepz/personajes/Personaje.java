@@ -1,15 +1,17 @@
 package com.patito.poo1pract.personajes;
-
-import javax.sound.midi.Soundbank;
-
 public class Personaje {
     private String nombre;
     private int edad;
-    
+    //constructor 
+    public  Personaje(String nombre, int edad){
+        this.edad = edad;
+        this.nombre =nombre;
+    }
     public void SetNombre(String nombre){
         this.nombre = nombre;
         int lenght = nombre.length();
-        System.out.println(nombre.length());
+        if (nombre.length()>5 && nombre.length()<25)
+            return ;
     } 
     public String getNombre(){
         return nombre;   
@@ -18,11 +20,6 @@ public class Personaje {
     public void saludar(){
         System.out.println("Hola Alumno de POO "+ nombre);
         
-    }
-    //constructor 
-    public  Personaje(String nombre){
-        this.edad = 0;
-        this.nombre =nombre;
     }
     //primer metodo
     public int getEdad(){
