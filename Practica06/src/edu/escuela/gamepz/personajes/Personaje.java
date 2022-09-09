@@ -7,11 +7,14 @@ public class Personaje {
         this.edad = edad;
         this.nombre =nombre;
     }
-    public void SetNombre(String nombre){
-        this.nombre = nombre;
+    public boolean setNombre(String nombre){
         if (nombre.length()>5 && nombre.length()<25){
+            this.nombre = nombre;
             return true;
+        }else{
+            return false;   
         }
+        
     } 
     public String getNombre(){
         return nombre;   
@@ -31,8 +34,7 @@ public class Personaje {
 
     }
     //nuevo metodo 
-    public void getDetalle(){
-        return nombre + "\t" edad;
-        
+    public String getDetalle(){
+        return nombre + "\t" + edad;
     }
 }

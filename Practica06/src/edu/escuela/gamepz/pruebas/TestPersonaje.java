@@ -1,4 +1,4 @@
-package edu.escuela.gamepz.personajes;
+package edu.escuela.gamepz.pruebas;
 import edu.escuela.gamepz.personajes.Personaje;
 
 public class TestPersonaje {
@@ -23,7 +23,5 @@ public class TestPersonaje {
         Personaje per08 = per03
         Personaje per09 = per02
         Personaje per10 = per01
-        System.out.println(per06)
-
     }
 }
