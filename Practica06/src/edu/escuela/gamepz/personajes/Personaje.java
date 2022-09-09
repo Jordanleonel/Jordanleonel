@@ -1,12 +1,13 @@
 package com.patito.poo1pract.personajes;
+
+import javax.sound.midi.Soundbank;
+
 public class Personaje {
     private String nombre;
     private int edad;
+    
     public void SetNombre(String nombre){
-            for i in range(this.nombre){
-                    this.nombre = nombre;
-                     
-                    }
+            this.nombre = nombre;
 
         }
         
