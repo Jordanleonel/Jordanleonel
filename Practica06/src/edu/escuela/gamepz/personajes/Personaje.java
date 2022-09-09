@@ -7,10 +7,9 @@ public class Personaje {
     private int edad;
     
     public void SetNombre(String nombre){
-            this.nombre = nombre;
-
-        }
-        
+        this.nombre = nombre;
+        int lenght = nombre.length();
+        System.out.println(nombre.length());
     } 
     public String getNombre(){
         return nombre;   
