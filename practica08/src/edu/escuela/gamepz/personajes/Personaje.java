@@ -2,11 +2,17 @@ package edu.escuela.gamepz.personajes;
 
 public class Personaje{
 	private String nombre;
-	private int edad;
+	private int vida;
+	//constructores 
+	public Personaje (String nombre, int vida){
+		this.nombre = nombre;
+		this.vida = vida; 
+	}
 	public Personaje (String nombre){
 		this.nombre = nombre;
-		this.edad = edad; 
+		int vida = 3; 
 	}
+	//metodos 
 	public void setNombre(String nombre){
 		int length = nombre.length();
 		if(length >5 && length <25)
@@ -18,19 +24,23 @@ public class Personaje{
 	public void saludar(){
 		System.out.println("Hola alumno de POO" +  nombre);
 		}
-	public int getEdad(){
-		return edad;
+	public int getVida(){
+		return vida;
 	}
 	
 	public String getDetalle(){
-		return nombre + "\t" + edad; 
+		return nombre + "\t" + vida; 
 	}
-	public boolean setEdad(int e){
-		if (e>0 && e<120){
-			this.edad = e;
+	public boolean setVida(int e){
+		if (e>0 && e<99){
+			this.vida = e;
 			return true;
 		}else{
 			return false;
 		} 
+	}
+	//metodos 
+	public void decVida(){
+		vida = vida-1;
 	}
 }
