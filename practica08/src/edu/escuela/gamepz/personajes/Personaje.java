@@ -1,9 +1,9 @@
 package personajes; 
 
 public class Personaje{
-	private String nombre;
-	private int vida;
-	private int i;
+	protected String nombre;
+	protected static int vida;
+	protected int i;
 	//constructores 
 	public Personaje (String nombre, int vida){
 		this.nombre = nombre;
@@ -72,3 +72,4 @@ public class Personaje{
 		}
 	}
 }
+                
