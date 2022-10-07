@@ -29,8 +29,18 @@ public class Planta extends Personaje {
 		return nombre + "\t" + vida + "\t" + escudo; 
 	}
     public void decVida(){
+        if(escudo == A){
+            super.decVida*2;
+        }
+    }
+    public void decVida(int){
         if(escudo = A){
         }
     }
-    
+    public void addVida(){
+
+    }
+    public void addVida(int){
+
+    }
 }

@@ -4,6 +4,7 @@ public class Personaje{
 	protected String nombre;
 	protected static int vida;
 	protected int i;
+    public int decVida;
 	//constructores 
 	public Personaje (String nombre, int vida){
 		this.nombre = nombre;
