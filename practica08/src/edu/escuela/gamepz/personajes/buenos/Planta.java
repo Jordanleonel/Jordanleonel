@@ -33,7 +33,7 @@ public class Planta extends Personaje {
             super.decVida*2;
         }
     }
-    public void decVida(int){
+    public void decVida(int es ){
         if(escudo = A){
         }
     }

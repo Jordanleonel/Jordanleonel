@@ -1,8 +1,8 @@
 package personajes; 
 
 public class Personaje{
-	protected String nombre;
-	protected static int vida;
+	protected  String nombre;
+	protected  int vida;
 	protected int i;
     public int decVida;
 	//constructores 
