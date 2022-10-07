@@ -3,6 +3,7 @@ package edu.escuela.gamepz.personajes;
 public class Personaje{
 	private String nombre;
 	private int vida;
+	private int i;
 	//constructores 
 	public Personaje (String nombre, int vida){
 		this.nombre = nombre;
@@ -10,7 +11,7 @@ public class Personaje{
 	}
 	public Personaje (String nombre){
 		this.nombre = nombre;
-		int vida = 3; 
+		vida = 3; 
 	}
 	//metodos 
 	public void setNombre(String nombre){
@@ -39,8 +40,27 @@ public class Personaje{
 			return false;
 		} 
 	}
-	//metodos 
+	//primeros metodos del paso 3 de la practica 08 
 	public void decVida(){
-		vida = vida-1;
+		if(vida>0 && vida<99){
+			vida = vida-1;
+		}else{
+			System.out.println("No esta dentro de los valores permitidos");
+		}
+		
+	}
+	public void decVida(int i){
+		if(vida>0 && vida<99){
+			vida= vida - i;
+		}else{
+			System.out.println("No esta dentro de los valores permitidos");
+		}
+	}
+	//segundos metodos del paso 3 de la practica 08 
+	public void addVida(){
+		vida = vida + 1;
+	}
+	public void addVida(int i){
+		vida = vida + i;
 	}
 }
