@@ -1,8 +1,9 @@
 package personajes.buenos;
+import javax.xml.transform.Templates;
+
 import personajes.Personaje;
 
-public class Planta extends Personaje {
-    private static final char A = 0;
+public class Planta extends Personaje { 
     char escudo;
     //constructores
     public Planta (String nombre, int vida, char escudo){
@@ -10,20 +11,13 @@ public class Planta extends Personaje {
         this.escudo = escudo;
     }
     public Planta (String nombre, char escudo){
-        super(nombre);
-        vida = 3;
-        this.escudo = escudo;
+        this(nombre, vida, escudo);
     }
     public Planta (String nombre, int vida){
-        super(nombre, vida){
-            char A;
-            escudo = A;
-        }
+        this(nombre, vida, 'A');
     }
     public Planta(String nombre){
-    super(nombre, vida);
-    escudo= A;
-    vida = 3;
+        this(nombre, 3, 'A');
     }
 
     //metodo
@@ -34,5 +28,9 @@ public class Planta extends Personaje {
     public String getDetalle(){
 		return nombre + "\t" + vida + "\t" + escudo; 
 	}
+    public void decVida(){
+        if(escudo = A){
+        }
+    }
     
 }

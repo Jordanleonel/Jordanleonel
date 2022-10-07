@@ -22,13 +22,13 @@ public class Personaje{
 	public String getNombre(){
 		return nombre;
 	}
-	public void saludar(){
+	/*public void saludar(){
 		System.out.println("Hola alumno de POO" +  nombre);
 		}
 	public int getVida(){
 		return vida;
 	}
-	
+	*/
 	public String getDetalle(){
 		return nombre + "\t" + vida; 
 	}
@@ -72,4 +72,3 @@ public class Personaje{
 		}
 	}
 }
-                
