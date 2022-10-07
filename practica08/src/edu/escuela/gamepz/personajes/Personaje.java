@@ -1,4 +1,4 @@
-package edu.escuela.gamepz.personajes; 
+package personajes; 
 
 public class Personaje{
 	private String nombre;
@@ -58,9 +58,17 @@ public class Personaje{
 	}
 	//segundos metodos del paso 3 de la practica 08 
 	public void addVida(){
-		vida = vida + 1;
+		if(vida>0 && vida<99){
+			vida = vida + 1;
+		}else{
+			System.out.println("No esta dentro de los valores permitidos");
+		}
 	}
 	public void addVida(int i){
-		vida = vida + i;
+		if(vida>0 && vida<99){
+			vida = vida + i;
+		}else{
+			System.out.println("No esta dentro de los valores permitidos");
+		}
 	}
 }
