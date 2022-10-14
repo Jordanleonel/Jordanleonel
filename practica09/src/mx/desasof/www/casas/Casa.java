@@ -11,7 +11,9 @@ public class Casa {
         this(2,2000000f);
         habitacion= 2;
         costo= 2000000;
-
+    }
+    public int hascode(){
+        return (tipo.hashCode()*hab)*(int)(costo);
     }
     
 }
