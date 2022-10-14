@@ -23,7 +23,7 @@ public class Campo extends Casa {
     }
     //equals
     public boolean equals(Object ob){
-        return super.equals(ob) && ob instanceof Campo &&
+        return super.equals(ob) && ob instanceof Campo;
     }
     public String toString(){
         return tipo + "\t" + hab + "\t" + "\t" + costo;

@@ -8,10 +8,10 @@ public class Urbana extends Campo {
     }
     public Urbana(String tipo){
         super(tipo);
-        this.bannos= bannos;
+
     }
     public int hashcode(){
-        return (((tipo.hashCode)*bannos)*23);
+        return (tipo.hashCode()*hab)*(int)(costo)*(bannos)*(23);
 
     }
 }
