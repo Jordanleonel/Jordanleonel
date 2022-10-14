@@ -1,3 +1,5 @@
+package mx.desasof.www.casas;
+
 public class Casa {
     String tipo;
     int hab;
@@ -15,9 +17,10 @@ public class Casa {
         return (tipo.hashCode()*hab)*((int)(costo));
     }
     public boolean equals(Object o){
-		if ((tipo.equals(tipo)){
+		if ((tipo.equals(tipo)) && (costo== costo)){
             return true;
         }
+        return false;
 	}
     public String toString(){
         return tipo + "\t" + hab + "\t" + "\t" + costo;
