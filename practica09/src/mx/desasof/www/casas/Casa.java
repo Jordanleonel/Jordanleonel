@@ -17,11 +17,14 @@ public class Casa {
         return (tipo.hashCode()*hab)*(int)(costo);
     }
     public boolean equals(Object o){
-        Casa c =(Casa)o;
-		if ((tipo.equals(c)) && (costo== costo)){
-            return true;
-        }
-        return false;
+		if (o != null && o instanceof Casa) {
+			Casa cas = (Casa) o;
+
+			if (tipo.equals(cas.tipo) && (costo == cas.costo)) {
+				return true;
+			}
+		}
+		return false;
 	}
     public String toString(){
         return tipo + "\t" + hab + "\t" + "\t" + costo;
