@@ -13,11 +13,12 @@ public class Casa {
         this(tipo, 2, 2000000f);
         
     }
-    public int hascode(){
-        return (tipo.hashCode()*hab)*((int)(costo));
+    public int hashcode(){
+        return (tipo.hashCode()*hab)*(int)(costo);
     }
     public boolean equals(Object o){
-		if ((tipo.equals(tipo)) && (costo== costo)){
+        Casa c =(Casa)o;
+		if ((tipo.equals(c)) && (costo== costo)){
             return true;
         }
         return false;
