@@ -1,24 +1,31 @@
+package mx.desasof.www.casas;
+
 public class Campo extends Casa {
     //arreglo
-    float piscina [2];
+    float Piscina = new Piscina [2];
+    
     //constructor
-    public Casa(String tipo, int hab, float costo){
-        this.piscina[0];
-        this.piscina[1];
+    public Campo(String tipo, int hab, float costo){
+       super(tipo, hab, costo);
+       
+    }
+    public Campo(String tipo) {
+        super(tipo);
     }
     
     //hascode
     public int hascode(){
-        return (tipo.hashCode()*ancho[0])*largo[1]);
+        return ((tipo.hashCode()*ancho[0])*largo[1]);
     }
     //equals
     public boolean equals(Object o){
-		if ((tipo.equals(tipo)){
+		if (((tipo.equals(Casa)) && (costo== costo)) && tipo.equals(Campo)){
             return true;
         }
-	}
+    } 
     public String toString(){
-        return 
-    }  
+        return tipo + "\t" + hab + "\t" + "\t" + costo + "\t" + ancho[0] + largo[1];
+    }
+    
 }
 
