@@ -1,8 +1,5 @@
-package personajes.malos;
-
-import personajes.Personaje;
-
-public class Zombie extends Personaje {
+package edu.escuela.gamepz.personajes.malos;
+public class Zombie extends Personaje implements Muerto {
     protected static boolean ataque;
     //constructores
     public Zombie(String nombre, int vida, boolean ataque){

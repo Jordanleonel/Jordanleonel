@@ -1,6 +1,4 @@
-package personajes.buenos;
-import personajes.Personaje;
-import utils.Escudo;
+package edu.escuela.gamepz.personajes.buenos;
 
 public class Planta extends Personaje { 
     private Escudo escudo;
@@ -10,15 +8,16 @@ public class Planta extends Personaje {
         this.escudo = escudo;
     }
     public Planta (String nombre, Escudo escudo){
-        this(nombre, escudo);
+        super(nombre);
+        this.escudo=escudo;
     }
     public Planta (String nombre, int vida){
         this(nombre, vida);
-        int nivel = escudo.NULO;
+        Escudo nivel = Escudo.NULO;
     }
     public Planta(String nombre){
         this(nombre, 3);
-        int nivel = escudo.NULO;
+        Escudo nivel = escudo.NULO;
     }
 
     //metodo
@@ -30,9 +29,7 @@ public class Planta extends Personaje {
 		return nombre + "\t" + vida + "\t" + escudo; 
 	}
     public void decVida(){
-        if(escudo == A){
-            super.decVida*2;
-        }
+        
     }
     public void decVida(int es ){
         if(escudo = A){
@@ -41,7 +38,5 @@ public class Planta extends Personaje {
     public void addVida(){
 
     }
-    public void addVida(int){
-
-    }
+    
 }

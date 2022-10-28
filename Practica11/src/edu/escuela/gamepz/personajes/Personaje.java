@@ -1,4 +1,4 @@
-package personajes; 
+package edu.escuela.gamepz.personajes; 
 
 public abstract class Personaje{
 	protected  String nombre;

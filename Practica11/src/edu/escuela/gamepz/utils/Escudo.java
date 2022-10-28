@@ -1,9 +1,10 @@
-package utils;
+package edu.escuela.gamepz.utils;
 
-public enum Escudo {
-    int SUPER = 0;
-    int MEDIO = 1;
-    int BAJO  = 2;
-    public int NULO  = 3;
+public enum Escudo{
+    SUPER(0),
+    MEDIO(1),
+    BAJO(2),
+    NULO(3);
+    public int nivel;
     
 }
