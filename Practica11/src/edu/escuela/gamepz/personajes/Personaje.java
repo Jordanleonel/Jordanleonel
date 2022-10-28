@@ -2,7 +2,7 @@ package personajes;
 
 public abstract class Personaje{
 	protected  String nombre;
-	private  int vida;
+	protected  int vida;
 	protected int i;
     public int decVida;
 	//constructores 

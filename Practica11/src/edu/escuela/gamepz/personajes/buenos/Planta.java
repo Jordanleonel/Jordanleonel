@@ -1,31 +1,32 @@
 package personajes.buenos;
-
-
 import personajes.Personaje;
+import utils.Escudo;
 
 public class Planta extends Personaje { 
-    char escudo;
+    private Escudo escudo;
     //constructores
-    public Planta (String nombre, int vida, char escudo){
+    public Planta (String nombre, int vida, Escudo escudo){
         super(nombre, vida);
         this.escudo = escudo;
     }
-    public Planta (String nombre, char escudo){
-        this(nombre, vida, escudo);
+    public Planta (String nombre, Escudo escudo){
+        this(nombre, escudo);
     }
     public Planta (String nombre, int vida){
-        this(nombre, vida, 'A');
+        this(nombre, vida);
+        int nivel = escudo.NULO;
     }
     public Planta(String nombre){
-        this(nombre, 3, 'A');
+        this(nombre, 3);
+        int nivel = escudo.NULO;
     }
 
     //metodo
-    public char escudo(){
+    public Escudo escudo(){
         return escudo;
     }
     //segundo metodo
-    public String getDetalle(){
+    public String toString(){
 		return nombre + "\t" + vida + "\t" + escudo; 
 	}
     public void decVida(){
